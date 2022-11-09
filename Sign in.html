@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signin.css"/>
+</head>
+<body>
+    <h1><img src="pictures/logo.png"/></h1>
+    <div>
+        <h3>Sign In</h3>
+       <form>
+        
+        <label for="">Email</label>
+        <input type="email" placeholder="Enter Email" id="email"/>
+        <label for="">Password</label>
+        <input type="password" placeholder="Enter Password" id="pwd"/>
+        <input type="submit" value="SIGN IN" id="submit"/>
+    </form>
+       <button>Continue with Google</button>
+       <h3>Don't have an account?<a href="Signup.html">Sign up</h3</a></h3>
+    </div>
+</body>
+</html>
+<script>
+    let Data=JSON.parse(localStorage.getItem("student_data"))
+    document.querySelector("form").addEventListener("submit",function(event){
+        event.preventDefault()
+        checkdata(Data)
+    })
+
+    function checkdata(arr){
+        let count=0
+        for(let el of arr){
+            if(document.querySelector("#email").value==el.Email && document.querySelector("#pwd").value==el.Password){
+               count++
+                       }
+                                
+        }
+       if(count>0){alert("Login Succesfull")}
+       else{alert("wrong Credential")}
+    }
+</script>
