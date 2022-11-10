@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+   <link rel="stylesheet" href="signup.css"/>
+</head>
+<body>
+    <h1><img src="pictures/logo.png"/></h1>
+    <div>
+        <h3>Sign Up</h3>
+       <form>
+        <label for="">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full Name"/>
+        <label for="">Email</label>
+        <input type="email" placeholder="Enter Email" id="email"/>
+        <label for="">Password</label>
+        <input type="password" placeholder="Enter Password" id="pwd"/>
+       
+       <p>By signing up, I accept the Masai School Term of services and acknowledge the Privacy Policy</p>
+       <input type="submit" value="SIGN UP" id="submit"/>
+    </form>
+       <h3>Already have account?<a href="Sign in.html">Sign in</a></h3>
+    </div>
+</body>
+</html>
+<script>
+    let data=JSON.parse(localStorage.getItem("student_data"))||[]
+
+    document.querySelector("form").addEventListener("submit",function(event){
+        event.preventDefault()
+       let obj={
+        Name:document.querySelector("#name").value,
+        Email:document.querySelector("#email").value,
+        Password:document.querySelector("#pwd").value
+       }
+       data.push(obj)
+       localStorage.setItem("student_data",JSON.stringify(data))
+    })
+</script>
