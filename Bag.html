@@ -64,13 +64,47 @@ footer{
 #quantity{
     background-color: red;
 }
+#payment{
+    display: flex;
+    justify-content:center;
+}
+#bill{
+    height:250px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 350px;
+    margin-right: 180px;
+
+}
+#bill>div>h3{
+    background-color: rgb(181, 181, 181);
+}
+#bill>button{
+    display: block;
+ 
+  margin-top: 100px;
+  width: 100%;
+}
+#bill>div>P{
+    padding: 20px;
+}
 
     </style>
 </head>
 <body>
     <h1>YOUR BAG</h1>
-    <div id="Products">
+    <div id="payment">
+        <div id="Products">
 
+        </div>
+        <div id="bill">
+            <div>
+                <h3>ORDER SUMMARY</h3>
+            </div>
+            <div>
+               <p>SUBTOTAL</p>
+            </div>
+            <button>SECURE CHECKOUT</button>
+        </div>
     </div>
     <hr>
     <div id="end">
@@ -107,75 +141,8 @@ footer{
     
 </body>
 </html>
-<script>
-let products=JSON.parse(localStorage.getItem("cart"))
-let bag=[]
-displaycard(products)
 
-function displaycard(arr) {
-        document.querySelector("#Products").innerHTML = ""
-        arr.forEach((element) => {
-            let div = document.createElement("div")
 
-            let Img = document.createElement("img")
-            Img.setAttribute("src", element.avatar)
-            let Title = document.createElement("h3")
-            Title.innerText = element.title
-           
-           
-            let Price = document.createElement("p")
-            Price.innerText = element.price
-
-            let increase=document.createElement("button")
-             increase.innerText="+"
-             increase.addEventListener("click",()=>{
-                let selected=element.id
-               
-                let search=bag.find((element)=>element.id==selected);
-
-                if(search===undefined){
-                    bag.push({
-                        id:selected,
-                        item:1,
-                        
-                    })
-                }else{
-                    search.item+=1
-                }
-                // console.log(bag)
-                update(selected)
-             })
-
-             let quantity=document.createElement("span")
-             quantity.innerText=0
-
-            let decrease=document.createElement("button")
-           decrease.innerText="-"
-           decrease.addEventListener("click",()=>{
-                let selected=element.id
-               
-                let search=bag.find((element)=>element.id==selected);
-
-                if(search.item===0){
-                    return
-                }else{
-                    search.item-=1
-                }
-                // console.log(bag)
-                update(selected)
-             })
-           
-
-           let remove=document.createElement("button")
-              remove.innerText="Remove"
-            div.append(Img, Title, Price ,increase,quantity,decrease,remove)
-            document.querySelector('#Products').append(div)
-        });
-    }
-    function update(id){
-        let search=bag.find((x)=>x.id===id)
-        console.log(search.item)
-        document.querySelector("span").innerHtml=search.item
-    }
+<script src="bag.js">
 
 </script>

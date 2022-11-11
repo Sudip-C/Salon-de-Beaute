@@ -166,7 +166,27 @@ border: 1px solid red1;
 footer{
 font-size: 12px;
 }
+@media screen and (min-width:600px)  and (max-width:999px){
+    #body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: auto;
+    margin-top: 30px;
+    width: 90%;
 
+}
+}
+@media screen and (min-width:200px)and (max-width:599px){
+    #body {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: auto;
+    margin-top: 30px;
+    width: 90%;
+}
+}
    </style>
 </head>
 
@@ -174,10 +194,10 @@ font-size: 12px;
     <header>Limited time! Join PC Perks FREE + save even more on Holiday Specials. LEARN MORE</header>
     <div id="nav">
         <div class="logo">
-            <img src="pictures/logo.png" oninput="search()" />
+            <img src="pictures/logo.png"  />
         </div>
         <div id="function">
-            <input placeholder="search"/>
+            <input placeholder="search" oninput="search()"/>
             <button><a href="signup.html">sign in</a></button>
             <img src="pictures/bag.png" id="bag" />
             <img src="pictures/india.png" />

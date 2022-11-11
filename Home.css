@@ -146,16 +146,21 @@ input {
 }
 #inside>div{
     margin: 10px;
+    background-color: white;
+    padding:20px;
 }
 #inside>div>button{
     padding: 10px;
     border: .5px black solid;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    width: 100%;
 }
 
 #slider>img {
     width: 20%;
+    
 }
 
 #middle-card {
@@ -172,6 +177,12 @@ input {
    margin: 10px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border-radius: 10px;
+}
+#middle-card>div>img{
+    width: 100%;
+}
+#middle-card>div>p{
+    text-align: center;
 }
 
 #middle>h1 {
@@ -245,16 +256,25 @@ input {
 }
 #bottom-slider1{
     height: 350px;
-    width: 95%;
+    width: 92%;
     margin: auto;
+  
     background-color: rgb(232, 191, 155);
     margin-bottom: 100px;
+   display: flex;
+ justify-content: space-between;
 }
+
+  
+
+
+
+
 #bottom-slider2{
     height: 350px;
     width: 95%;
     margin: auto;
-    background-color: rgb(232, 191, 155);
+    background-color: rgb(231, 124, 30);
     margin-bottom: 20px;
 }
 #end{
@@ -264,7 +284,7 @@ input {
 #end-child{
     display: flex;
     width: 30%;
-    justify-content:space-evenly;
+    justify-content:space-between;
     text-align: left;
 }
 #end-child2{
