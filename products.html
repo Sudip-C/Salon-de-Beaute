@@ -174,10 +174,10 @@ font-size: 12px;
     <header>Limited time! Join PC Perks FREE + save even more on Holiday Specials. LEARN MORE</header>
     <div id="nav">
         <div class="logo">
-            <img src="pictures/logo.png" />
+            <img src="pictures/logo.png" oninput="search()" />
         </div>
         <div id="function">
-            <input placeholder="search" />
+            <input placeholder="search"/>
             <button><a href="signup.html">sign in</a></button>
             <img src="pictures/bag.png" id="bag" />
             <img src="pictures/india.png" />
@@ -264,6 +264,15 @@ font-size: 12px;
             console.log(data)
             displaycard(data)
         })
+
+        function search(){
+        let ser=document.querySelector("input").value
+        let newdata=bag.filter(function(el){
+            return el.title.toLowerCase().includes(ser.toLowerCase())
+        })
+        displaycard(newdata)
+    }
+
 
     function displaycard(arr) {
         document.querySelector("#body").innerHTML = ""
