@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #Products{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            margin: auto;
+            margin-top: 30px;
+            width: 30%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            padding:40px;
+
+        }
+
+        #Products>div>img {
+            width: 100%;
+        }
+
+        #Products>div {
+            margin: 10px;
+            width: 85%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            
+        }
+        h1{
+            text-align: center;
+        }
+        #Products>div>button{
+            margin: 10px;
+           background-color: rgb(228, 228, 228);
+           border-radius: 5px;
+            border: none;
+        }
+        #end{
+    display: flex;
+    justify-content: space-between;
+}
+        #end-child{
+    display: flex;
+    width: 30%;
+    justify-content:space-evenly;
+    text-align: left;
+}
+#end-child2{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    font-size: 20px;
+    border: 1px solid red1;
+}
+footer{
+    font-size: 12px;
+}
+#quantity{
+    background-color: red;
+}
+
+    </style>
+</head>
+<body>
+    <h1>YOUR BAG</h1>
+    <div id="Products">
+
+    </div>
+    <hr>
+    <div id="end">
+        <div id="end-child">
+            <div>
+                <h5>ABOUT COMPANY</h5>
+                <p>PRESS ROOM</p>
+                <p>COMPANY INFO</p>
+                <p>EXECUTIVE TEAM</p>
+                <p>CAREERS</p>
+                <p>BLOG</p>
+            </div>
+            <div>
+                <h5>HELP</h5>
+                <p>PRODUCT & HELP CENTER</p>
+                <p>SHIPPING</p>
+                <p>SATISFACTION GUARANTEE</p>
+                <p>PROMOTIONAL TERMS & CONDITIONS</p>
+                <p>FAQ</p>
+                <p></p>KLARNA</p>
+                <p>SITE MAP</p>
+            </div>
+        </div>
+        <div id="end-child2">
+            <h2>Let's Get social</h2>
+        </div>
+    </div>
+<hr>
+    <footer>
+        ©2022 Rodan & Fields  | Terms & Conditions  | Accessibility  |  
+        California Supply Chains Act  | DSA Code Of Ethics  |  Disclaimer
+        
+    </footer>
+    
+</body>
+</html>
+<script>
+let products=JSON.parse(localStorage.getItem("cart"))
+let bag=[]
+displaycard(products)
+
+function displaycard(arr) {
+        document.querySelector("#Products").innerHTML = ""
+        arr.forEach((element) => {
+            let div = document.createElement("div")
+
+            let Img = document.createElement("img")
+            Img.setAttribute("src", element.avatar)
+            let Title = document.createElement("h3")
+            Title.innerText = element.title
+           
+           
+            let Price = document.createElement("p")
+            Price.innerText = element.price
+
+            let increase=document.createElement("button")
+             increase.innerText="+"
+             increase.addEventListener("click",()=>{
+                let selected=element.id
+               
+                let search=bag.find((element)=>element.id==selected);
+
+                if(search===undefined){
+                    bag.push({
+                        id:selected,
+                        item:1,
+                        
+                    })
+                }else{
+                    search.item+=1
+                }
+                // console.log(bag)
+                update(selected)
+             })
+
+             let quantity=document.createElement("span")
+             quantity.innerText=0
+
+            let decrease=document.createElement("button")
+           decrease.innerText="-"
+           decrease.addEventListener("click",()=>{
+                let selected=element.id
+               
+                let search=bag.find((element)=>element.id==selected);
+
+                if(search.item===0){
+                    return
+                }else{
+                    search.item-=1
+                }
+                // console.log(bag)
+                update(selected)
+             })
+           
+
+           let remove=document.createElement("button")
+              remove.innerText="Remove"
+            div.append(Img, Title, Price ,increase,quantity,decrease,remove)
+            document.querySelector('#Products').append(div)
+        });
+    }
+    function update(id){
+        let search=bag.find((x)=>x.id===id)
+        console.log(search.item)
+        document.querySelector("span").innerHtml=search.item
+    }
+
+</script>

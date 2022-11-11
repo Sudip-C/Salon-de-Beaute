@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    header {
+    text-align: center;
+    height: 35px;
+    padding: 10px;
+    background-color: rgb(213, 213, 213);
+}
+
+.logo>img {
+    width: 10%;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+
+}
+
+#nav {
+    display: flex;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+/* #function>#bag {
+    width: 40%;
+    height: 20%;
+    margin-right: 10px;
+    border: 1px solid red;
+    margin-top: 50px;
+} */
+
+#function>img {
+    width: 2%;
+    height: 30%;
+    margin-right: 10px;
+
+    margin-top: 18px;
+}
+
+#function>button,
+input {
+    margin: 10px;
+    text-align: right;
+    border: none;
+    background-color: white;
+
+}
+
+#function>button>a {
+    text-decoration: none;
+    color: black;
+}
+
+#function {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    padding-right: 10px;
+}
+
+#nav2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#nav2 a {
+    text-decoration: none;
+    font-size: 12px;
+    margin: 10px;
+    color: black;
+}
+
+#skincare {
+    display: flex;
+    width: 90%;
+    margin: auto;
+
+}
+
+#skincare>div>img {
+    width: 100%;
+
+}
+
+#skincare>div {
+    width: 50%;
+    background-color: rgb(234, 223, 223);
+
+}
+
+#skincare>div:nth-child(2) {
+    padding: 50px;
+}
+
+#skincare>div:nth-child(2)>h2 {
+    font-size: 35px;
+}
+
+#skincare>div:nth-child(2)>p {
+    font-size: 18px;
+}
+
+#body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: auto;
+    margin-top: 30px;
+    width: 90%;
+
+}
+
+#body>div>img {
+    width: 100%;
+
+}
+#body>div>button{
+    padding: 10px;
+border: .5px black solid;
+border-radius: 5px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#body>div {
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px;
+}
+#heading{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+#heading>p{
+    font-size: 20px;
+}
+#end{
+display: flex;
+justify-content: space-between;
+}
+#end-child{
+display: flex;
+width: 30%;
+justify-content:space-evenly;
+text-align: left;
+}
+#end-child2{
+display: flex;
+justify-content: center;
+width: 70%;
+font-size: 20px;
+border: 1px solid red1;
+}
+footer{
+font-size: 12px;
+}
+
+   </style>
+</head>
+
+<body>
+    <header>Limited time! Join PC Perks FREE + save even more on Holiday Specials. LEARN MORE</header>
+    <div id="nav">
+        <div class="logo">
+            <img src="pictures/logo.png" />
+        </div>
+        <div id="function">
+            <input placeholder="search" />
+            <button><a href="signup.html">sign in</a></button>
+            <img src="pictures/bag.png" id="bag" />
+            <img src="pictures/india.png" />
+            <h4>English</h4>
+        </div>
+    </div>
+
+    <div id="nav2">
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="products.html">SKINCARE</a>
+            <a href="">HAIRCARE</a>
+            <a href="">BEST SELLERS </a>
+            <a href="">SPECIAL OFFERS</a>
+            <a href="">ABOUT</a>
+            <a href="">PERKS PROGRAM</a>
+            <a href="">BECOME A CONSULTANT</a>
+        </nav>
+    </div>
+    <div id="skincare">
+        <div>
+            <img
+                src="https://www.rodanandfields.com/en-us/medias/category-skincare-regimens-category-page-global.jpg?context=bWFzdGVyfHJvb3R8OTIzNjB8aW1hZ2UvanBlZ3xoMjUvaGVkLzE0OTMwMzcwODg3NzEwLmpwZ3xhNWVlNThiMTBiY2MxZTk2ODYxZWJjN2Q5ZTU2OWZhYjNmMDJiZDVmYjU0MjIwNGM0ZDcxNDdkZDFiOTNkZGIw" />
+
+        </div>
+        <div>
+            <h2>Skincare Regimens</h2>
+            <p> Finding a good skincare routine is easier than you may think. Our multi-step Regimens take the guesswork
+                out
+                of building a routine that works.</p>
+        </div>
+    </div>
+    <div id="heading">
+        <h1>Regimen</h1>
+        <p>Our skincare routines are made easy with our unique Multi-Med Therapy, providing the right ingredients, in
+            the right formulas, in the right order.</p>
+    </div>
+    <div id="body">
+
+    </div>
+    <hr>
+    <div id="end">
+        <div id="end-child">
+            <div>
+                <h5>ABOUT COMPANY</h5>
+                <p>PRESS ROOM</p>
+                <p>COMPANY INFO</p>
+                <p>EXECUTIVE TEAM</p>
+                <p>CAREERS</p>
+                <p>BLOG</p>
+            </div>
+            <div>
+                <h5>HELP</h5>
+                <p>PRODUCT & HELP CENTER</p>
+                <p>SHIPPING</p>
+                <p>SATISFACTION GUARANTEE</p>
+                <p>PROMOTIONAL TERMS & CONDITIONS</p>
+                <p>FAQ</p>
+                <p></p>KLARNA</p>
+                <p>SITE MAP</p>
+            </div>
+        </div>
+        <div id="end-child2">
+            <h2>Let's Get social</h2>
+        </div>
+    </div>
+<hr>
+    <footer>
+        ©2022 Rodan & Fields  | Terms & Conditions  | Accessibility  |  
+        California Supply Chains Act  | DSA Code Of Ethics  |  Disclaimer
+        
+    </footer>
+
+</body>
+
+</html>
+<script>
+    let url = "https://636bd1987f47ef51e13b4348.mockapi.io/Products"
+    let bag = []
+    fetch(url)
+        .then((res) => res.json())
+        .then((data) => {
+            bag = data
+            console.log(data)
+            displaycard(data)
+        })
+
+    function displaycard(arr) {
+        document.querySelector("#body").innerHTML = ""
+        arr.forEach((element) => {
+            let div = document.createElement("div")
+
+            let Img = document.createElement("img")
+            Img.setAttribute("src", element.avatar)
+            let Title = document.createElement("h3")
+            Title.innerText = element.title
+            let desc = document.createElement("p")
+            desc.innerText = element.Description
+            let cat = document.createElement("p")
+            cat.innerText = element.category
+            let Price = document.createElement("p")
+            Price.innerText = element.price
+            let btn = document.createElement("button")
+            btn.innerText = "ADD TO BAG"
+            btn.addEventListener("click",()=>{
+                addData("cart",element)
+            })
+
+            div.append(Img, Title, desc, cat, Price, btn)
+            document.querySelector('#body').append(div)
+        });
+    }
+    function addData(key,value){
+       let Data=JSON.parse(localStorage.getItem(key))||[]
+       Data.push(value)
+       localStorage.setItem(key,JSON.stringify(Data))
+     }
+
+
+
+</script>
