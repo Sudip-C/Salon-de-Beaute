@@ -23,6 +23,21 @@ header {
     display: flex;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
+#function>div {
+    position: relative;
+    margin-top: 18px;
+    margin-right: 5px;
+}  
+.cart-amount{
+    position: absolute;
+    top:-5px;
+    right: 0;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    padding: 1px;
+    border-radius: 100%;
+}
 
 #function>img {
     width: 2%;
@@ -31,6 +46,7 @@ header {
 
     margin-top: 18px;
 }
+
 
 #function>button,
 input {

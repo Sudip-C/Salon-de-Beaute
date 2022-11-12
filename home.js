@@ -1,4 +1,4 @@
-let url =" http://localhost:3000/user"
+let url ="https://636bd1987f47ef51e13b4348.mockapi.io/Products?page=1&limit=5"
 let bag = []
 fetch(url)
     .then((res) => res.json())
@@ -18,7 +18,7 @@ function displaycard(arr) {
         let Title = document.createElement("h3")
         Title.innerText = element.title
         let desc = document.createElement("p")
-        desc.innerText = element.description
+        desc.innerText = element.Description
         let cat = document.createElement("p")
         cat.innerText = element.category
         let Price = document.createElement("p")
