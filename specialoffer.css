@@ -1,0 +1,190 @@
+
+    header {
+        text-align: center;
+        height: 35px;
+        padding: 10px;
+        background-color: rgb(213, 213, 213);
+    }
+    
+    .logo>img {
+        width: 10%;
+    
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: end;
+        width: 50%;
+    
+    }
+    
+    #nav {
+        display: flex;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    }
+    
+    #function>.Bag{
+        position: relative;
+        margin-top: 18px;
+        margin-right: 5px;
+    }  
+    .cart-amount{
+        position: absolute;
+        top:-5px;
+        right: 0 ;
+        font-size: 10px;
+        background-color: black;
+        color: white;
+        padding: 1px;
+        border-radius: 100%;
+    }
+    
+    #function>img {
+        display: block;
+        width: 2%;
+        height: 30%;
+        margin-right: 10px;
+        margin-top: 18px;
+    }
+    
+    #function>button,
+    input {
+        margin: 10px;
+        text-align: right;
+        border: none;
+        background-color: white;
+    
+    }
+    
+    #function>button>a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    #function {
+        display: flex;
+        justify-content: end;
+        width: 50%;
+        padding-right: 10px;
+    }
+    
+    #nav2 {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+    
+    #nav2 a {
+        text-decoration: none;
+        font-size: 12px;
+        margin: 10px;
+        color: black;
+    }
+    
+    #special {
+        display: flex;
+        width: 90%;
+        margin: auto;
+    
+    }
+    
+    #special>div>img {
+        width: 100%;
+    
+    }
+    
+    #special>div {
+        width: 50%;
+        background-color: rgb(234, 223, 223);
+    
+    }
+    
+    #special>div:nth-child(2) {
+        padding: 50px;
+    }
+    
+    #special>div:nth-child(2)>h2 {
+        font-size: 35px;
+    }
+    
+    #special>div:nth-child(2)>p {
+        font-size: 18px;
+    }
+    
+    #body {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin: auto;
+        margin-top: 30px;
+        width: 90%;
+    
+    }
+    
+    #body>div>img {
+        width: 100%;
+    
+    }
+    #body>div>button{
+        padding: 10px;
+    border: .5px black solid;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    #body>div {
+        margin: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 20px;
+    }
+    #heading{
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    #heading>p{
+        font-size: 20px;
+    }
+    #end{
+    display: flex;
+    justify-content: space-between;
+    }
+    #end-child{
+    display: flex;
+    width: 30%;
+    justify-content:space-evenly;
+    text-align: left;
+    }
+    #end-child2{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    font-size: 20px;
+    border: 1px solid red1;
+    }
+    footer{
+    font-size: 12px;
+    }
+    @media screen and (min-width:600px)  and (max-width:999px){
+        #body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin: auto;
+        margin-top: 30px;
+        width: 90%;
+    
+    }
+    }
+    @media screen and (min-width:200px)and (max-width:599px){
+        #body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin: auto;
+        margin-top: 30px;
+        width: 90%;
+    }
+    }
+    
