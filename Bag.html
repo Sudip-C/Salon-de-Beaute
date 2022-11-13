@@ -5,93 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-       #Products{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(1, 1fr);
-            margin: auto;
-            margin-top: 30px;
-            width: 30%;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-            padding:40px;
-
-        }
-
-        #Products>div>img {
-            width: 100%;
-        }
-
-        #Products>div {
-            margin: 10px;
-            width: 85%;
-            margin: auto;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            
-        }
-        h1{
-            text-align: center;
-        }
-        #Products>div>button{
-            margin: 10px;
-           background-color: rgb(228, 228, 228);
-           border-radius: 5px;
-            border: none;
-        }
-        #end{
-    display: flex;
-    justify-content: space-between;
-}
-        #end-child{
-    display: flex;
-    width: 30%;
-    justify-content:space-evenly;
-    text-align: left;
-}
-#end-child2{
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    font-size: 20px;
-    border: 1px solid red1;
-}
-footer{
-    font-size: 12px;
-}
-#quantity{
-    background-color: red;
-}
-#payment{
-    display: flex;
-    justify-content:center;
-}
-#bill{
-    height:250px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    width: 350px;
-    margin-right: 180px;
-
-}
-#bill>div>h3{
-    background-color: rgb(181, 181, 181);
-}
-#bill>button{
-    display: block;
- 
-  margin-top: 100px;
-  width: 100%;
-}
-#bill>div>P{
-    padding: 20px;
-}
-
-    </style>
+ <link href="bag.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <h1>YOUR BAG</h1>
+    <h1>YOUR ORDERS</h1>
     <div id="payment">
         <div id="Products">
 
@@ -100,8 +17,9 @@ footer{
             <div>
                 <h3>ORDER SUMMARY</h3>
             </div>
-            <div>
-               <p>SUBTOTAL</p>
+            <div class="tp">
+                <p id="pro">TOTAL PRODUCT</p>
+               <p id="price">TOTAL</p>
             </div>
             <button>SECURE CHECKOUT</button>
         </div>

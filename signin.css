@@ -1,4 +1,7 @@
-h1>img{
+*{
+    font-family: sans-serif;
+}
+ h1>img{
     display: flex;
     justify-content: center;
     width: 20%;
