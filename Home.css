@@ -1,5 +1,7 @@
 
-    
+    *{
+        font-family: sans-serif;
+    }
 header {
     text-align: center;
     height: 35px;
@@ -23,6 +25,7 @@ header {
     display: flex;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
+
 #function>div {
     position: relative;
     margin-top: 18px;
@@ -43,8 +46,9 @@ header {
     width: 2%;
     height: 30%;
     margin-right: 10px;
-
-    margin-top: 18px;
+display: flex;
+align-items: center;
+    margin-top: 20px;
 }
 
 
@@ -67,6 +71,13 @@ input {
     width: 50%;
     padding-right: 10px;
 }
+#function>h4{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
 
 #nav2 {
     display: flex;
@@ -272,16 +283,22 @@ input {
 }
 #bottom-slider1{
     height: 350px;
-    width: 92%;
+    width: 95%;
     margin: auto;
-  
-    background-color: rgb(232, 191, 155);
+   
     margin-bottom: 100px;
-   display: flex;
- justify-content: space-between;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-  
+#bottom-slider1>div{
+    width: 19.5%;
+   
+}
+#bottom-slider1>div>img{
+    width:100%;
+   height: 350px;
+}
 
 
 
@@ -290,8 +307,18 @@ input {
     height: 350px;
     width: 95%;
     margin: auto;
-    background-color: rgb(231, 124, 30);
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#bottom-slider2>div{
+    width: 33%;
+   
+}
+#bottom-slider2>div>img{
+    width:100%;
+   height: 350px;
 }
 #end{
     display: flex;
@@ -300,7 +327,8 @@ input {
 #end-child{
     display: flex;
     width: 30%;
-    justify-content:space-between;
+    font-size: 12px;
+    justify-content:space-evenly;
     text-align: left;
 }
 #end-child2{

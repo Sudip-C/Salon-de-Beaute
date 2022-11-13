@@ -1,4 +1,6 @@
-
+*{
+    font-family: sans-serif;
+}
     header {
     text-align: center;
     height: 35px;
@@ -153,6 +155,7 @@ justify-content: space-between;
 #end-child{
 display: flex;
 width: 30%;
+font-size: 12px;
 justify-content:space-evenly;
 text-align: left;
 }
