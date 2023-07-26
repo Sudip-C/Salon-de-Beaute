@@ -16,9 +16,9 @@ function displaycard(arr) {
         let Img = document.createElement("img")
         Img.setAttribute("src", element.avatar)
         let Title = document.createElement("h3")
-        Title.innerText = element.title
+        Title.innerText = "Product"
         let desc = document.createElement("p")
-        desc.innerText = element.Description
+        desc.innerText = element.description.slice(0,20)+"..."
         let cat = document.createElement("p")
         cat.innerText = element.category
         let Price = document.createElement("p")
