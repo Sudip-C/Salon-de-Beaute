@@ -1,6 +1,5 @@
 # Salon-de-Beaute
-Deployed Link:- [ https://inquisitive-kangaroo-325231.netlify.app
-](https://64f422fb7209f06211b91aee--deft-lokum-3a892f.netlify.app/)
+Deployed Link:- https://64f422fb7209f06211b91aee--deft-lokum-3a892f.netlify.app/
 
 Hello people! Thank you for visiting our project. 
 
