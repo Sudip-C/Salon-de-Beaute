@@ -26,7 +26,7 @@
             let Img = document.createElement("img")
             Img.setAttribute("src", element.avatar)
             let Title = document.createElement("h3")
-            Title.innerText = "Product"
+            Title.innerText = element.title
             let desc = document.createElement("p")
             desc.innerText = element.description.slice(0,20)+"..."
             let cat = document.createElement("p")

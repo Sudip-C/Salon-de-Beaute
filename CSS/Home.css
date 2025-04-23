@@ -103,7 +103,7 @@ input {
 }
 
 #banner>#text {
-    width: 20%;
+    width: 30%;
     font-size: 20px;
     padding: 50px;
     color: white;
@@ -179,6 +179,8 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 10px;
+
 }
 #inside>div>button{
     padding: 10px;
