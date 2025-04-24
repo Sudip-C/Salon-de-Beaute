@@ -1,5 +1,5 @@
 # Salon-de-Beaute
-Deployed Link:- https://64f422fb7209f06211b91aee--deft-lokum-3a892f.netlify.app/
+Deployed Link:- https://beamish-starburst-1fb480.netlify.app/
 
 Hello people! Thank you for visiting our project. 
 
