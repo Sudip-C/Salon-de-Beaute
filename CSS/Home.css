@@ -110,6 +110,7 @@ input {
     margin-right: 100px;
 }
 
+
 #text>h2 {
     font-size: 40px;
 }
@@ -346,7 +347,83 @@ input {
 footer{
     font-size: 12px;
 }
+
+/* medium screen */
 @media screen and (min-width:600px) and (max-width:1000px){
+    #banner {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: auto;
+        background-color: rgba(103, 27, 103, 0.799);
+        height: 100%;
+    }
+    
+    #banner>#text {
+        width: 50%;
+        font-size: 20px;
+        padding: 50px;
+        color: white;
+        margin-right: 100px;
+    }
+    
+    
+    #text>h2 {
+        font-size: 40px;
+    }
+    
+    #text>button {
+        width: 300px;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #slider {
+        padding: 20px;
+         width: 95%;
+         margin: auto;
+         background-color: rgb(250, 216, 201);
+         margin-top: 70px;
+         margin-bottom: 100px;
+         display: flex;
+         
+     }
+     #slider::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+     #inside{
+         display: grid;
+         grid-template-columns: repeat(5,1fr);
+         overflow-x: scroll;
+         scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; 
+     }
+     #inside>div>img{
+         width: 100%;
+     }
+     #inside>div{
+         margin: 10px;
+         background-color: white;
+         padding:20px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         border-radius: 10px;
+     
+     }
+     #inside>div>button{
+         padding: 10px;
+         border: .5px black solid;
+         border-radius: 5px;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         text-align: center;
+         width: 100%;
+     }
+     
+     #slider>img {
+         width: 20%;
+         
+     }
     #middle-card {
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -356,19 +433,128 @@ footer{
         justify-content: space-evenly;
         margin-bottom: 120px;
     }
+    #bottom {
+        width: 90%;
+        margin: auto;
+        padding: 35px;
+        background-color: rgb(230, 254, 243);
+        margin-bottom: 40px;
+    }
+    
     #bottom>div {
-        width: 75%;
+        width: 90%;
         margin: auto;
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
         background-color: white;
-        padding: 15px;
+        padding: 10px;
     
+    }
+    
+    #bottom>div>div:nth-child(1) {
+        width: 31%;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    #bottom>div>div:nth-child(2) {
+        width: 31%;
+    }
+    
+    #bottom>div>div:nth-child(3) {
+        width: 31%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #bottom>div>div:nth-child(3)>button {
+        padding: 8px;
+        border: .5px black solid;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     
 }
 @media screen and (min-width:200px) and (max-width:599px){
+    #banner {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        width: 95%;
+        margin: auto;
+        background-color: rgba(103, 27, 103, 0.799);
+        height: 100%;
+    }
+    
+    #banner>#text {
+        width: 100%;
+        font-size: 20px;
+        padding: 50px;
+        color: white;
+        margin-right: 100px;
+    }
+    #video {
+        height:300px
+    }
+    
+    #text>h2 {
+        font-size: 40px;
+    }
+    
+    #text>button {
+        width: 300px;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #slider {
+        padding: 20px;
+         width: 95%;
+         margin: auto;
+         background-color: rgb(250, 216, 201);
+         margin-top: 70px;
+         margin-bottom: 100px;
+         display: flex;
+         
+     }
+     #slider::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+     #inside{
+         display: grid;
+         grid-template-columns: repeat(5,1fr);
+         overflow-x: scroll;
+         scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; 
+     }
+     #inside>div>img{
+         width: 100%;
+     }
+     #inside>div{
+         margin: 10px;
+         background-color: white;
+         padding:20px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         border-radius: 10px;
+     
+     }
+     #inside>div>button{
+         padding: 10px;
+         border: .5px black solid;
+         border-radius: 5px;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         text-align: center;
+         width: 100%;
+     }
+     
+     #slider>img {
+         width: 20%;
+         
+     }
     #middle-card {
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -378,14 +564,66 @@ footer{
         justify-content: space-evenly;
         margin-bottom: 120px;
     }
-    #bottom>div {
-        width: 75%;
+    #bottom {
+        width: 100%;
         margin: auto;
+        padding: 20px;
+        background-color: rgb(230, 254, 243);
+        margin-bottom: 40px;
+    }
+    
+    #bottom>div {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        padding: 10px;
+        align-items: center;
+    
+    }
+    
+    #bottom>div>div:nth-child(1) {
+        width: 31%;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    #bottom>div>div:nth-child(2) {
+        width: 31%;
+        font-size: 15px;
+        text-wrap: balance;
+    }
+    
+    #bottom>div>div:nth-child(3) {
+        width: 31%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #bottom>div>div:nth-child(3)>button {
+        padding: 8px;
+        border: .5px black solid;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        font-size: 10px;
+        font-weight: 6001;
+    }
+    #bottom1>div>h4{
+        font-size: 15px;
+        font-weight: 700;
+        
+    }
+    #bottom1>div>p{
+        font-size: 12px;
+        
+    }
+    #bottom1>div{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: white;
-        padding: 15px;
-    
+        align-items: center;        
     }
 }
